@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raman - Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="terminal">
+        <div class="terminal-header">
+            <div class="terminal-buttons">
+                <span class="btn close"></span>
+                <span class="btn minimize"></span>
+                <span class="btn maximize"></span>
+            </div>
+            <span class="terminal-title">raman@portfolio ~ $</span>
+        </div>
+        
+        <div class="terminal-body">
+            <div class="terminal-content" id="terminal-content">
+                <div class="line">
+                    <span class="prompt">$</span>
+                    <span class="command">cat welcome.txt</span>
+                </div>
+                <div class="output">
+                    <pre>
+╔════════════════════════════════════════════╗
+║   Welcome to Raman's Portfolio Website    ║
+║   Full Stack Developer | Web Enthusiast    ║
+╚════════════════════════════════════════════╝
+                    </pre>
+                </div>
+
+                <div class="line">
+                    <span class="prompt">$</span>
+                    <span class="command">whoami</span>
+                </div>
+                <div class="output">
+                    Raman Kushwah
+                </div>
+            </div>
+
+            <div class="nav-menu">
+                <button class="nav-btn" onclick="showSection('about')">About</button>
+                <button class="nav-btn" onclick="showSection('projects')">Projects</button>
+                <button class="nav-btn" onclick="showSection('skills')">Skills</button>
+                <button class="nav-btn" onclick="showSection('contact')">Contact</button>
+            </div>
+
+            <!-- About Section -->
+            <div id="about" class="section hidden">
+                <div class="line">
+                    <span class="prompt">$</span>
+                    <span class="command">cat about.txt</span>
+                </div>
+                <div class="output">
+                    <pre>
+Hi! I'm Raman.
+
+[Your bio here...]
+[Tell us about yourself!]
+
+                    </pre>
+                </div>
+            </div>
+
+            <!-- Projects Section -->
+            <div id="projects" class="section hidden">
+                <div class="line">
+                    <span class="prompt">$</span>
+                    <span class="command">cat projects.txt</span>
+                </div>
+                <div class="output">
+                    <pre>
+📁 PROJECT PORTFOLIO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[Add your projects here!]
+[Format:]
+[Project Name]
+[Description]
+[Technologies]
+
+                    </pre>
+                </div>
+            </div>
+
+            <!-- Skills Section -->
+            <div id="skills" class="section hidden">
+                <div class="line">
+                    <span class="prompt">$</span>
+                    <span class="command">cat skills.txt</span>
+                </div>
+                <div class="output">
+                    <pre>
+🛠️  TECHNICAL SKILLS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[Add your skills here!]
+
+                    </pre>
+                </div>
+            </div>
+
+            <!-- Contact Section -->
+            <div id="contact" class="section hidden">
+                <div class="line">
+                    <span class="prompt">$</span>
+                    <span class="command">cat contact.txt</span>
+                </div>
+                <div class="output">
+                    <pre>
+📧 GET IN TOUCH
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Email: your-email@example.com
+GitHub: github.com/your-username
+LinkedIn: linkedin.com/in/your-name
+Twitter: @your-twitter
+
+                    </pre>
+                </div>
+            </div>
+
+            <div class="line cursor" id="cursor">
+                <span class="prompt">$</span>
+                <span class="command blink">_</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
